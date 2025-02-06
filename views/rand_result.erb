@@ -1,0 +1,33 @@
+<h1> 
+Random Results
+</h1>
+
+<%=params%>
+
+<dl>
+  <dt>
+    Minimum
+  </dt>
+  <dd>
+    <%=params.fetch("users_min")%>
+  </dd>
+
+   <dt>
+    Maximum
+  </dt>
+  <dd>
+  <%=params.fetch("users_max")%>
+  </dd> 
+
+   <dt>
+    Random Number
+  </dt>
+  <dd>
+  <%= rand(params.fetch("users_min").to_f..params.fetch("users_max").to_f) %>
+  </dd> 
+
+  </dl>
+
+<a href="/random/new">
+  Calculate another square
+</a>

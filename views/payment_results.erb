@@ -1,0 +1,40 @@
+<h1> 
+Payment Results
+</h1>
+
+<%=params%>
+
+<dl>
+  <dt>
+    APR
+  </dt>
+  <dd>
+    <%=params.fetch("users_apr")%>
+  </dd>
+
+   <dt>
+    Number of years
+  </dt>
+  <dd>
+  <%=params.fetch("users_yr")%>
+  </dd> 
+
+   <dt>
+    Prinicipal
+  </dt>
+  <dd>
+  <%=params.fetch("users_p")%>
+  </dd> 
+
+   <dt>
+    Payment
+  </dt>
+  <dd>
+  <%=params.fetch("users_yr")%>
+  </dd> 
+
+  </dl>
+
+<a href="/payment/new">
+  Calculate another square
+</a>
